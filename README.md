@@ -9,10 +9,31 @@ Terraform is an infrastructure as code (IaC) tool used to define and manage clou
 
 Terraform is declarative. That means you define what you want, not how to do it step by step. For example, you declare that you want a file called `hello.txt` with the content `Hello, World!`, and Terraform figures out the actions necessary to create or update that resource.
 
-## Requirements
+## Prerequisites
 
-- OpenTofu
-- Internet access the first time you initialize, to download the provider
+Before running this project, install OpenTofu and make sure you have internet access the first time you initialize so Terraform can download the provider.
+
+### Mac
+
+If you use Homebrew:
+
+```sh
+brew install opentofu
+```
+
+### Windows
+
+If you use winget:
+
+```powershell
+winget install OpenTofu.Opentofu
+```
+
+You can also install it with Chocolatey:
+
+```powershell
+choco install opentofu
+```
 
 ## Usage
 
